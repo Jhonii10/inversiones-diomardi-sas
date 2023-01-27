@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ubicaciones</title>
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="ubicaciones.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <style>
+
+:root{
+                    --white: #FFFFFF;
+                    --black: #000000;
+                    --very-ligth-pink: #C7C7C7;
+                    --text-input-field: #F7F7F7;
+                    --hospital-green: #ACD9B2;
+                  }
+           
+                  body{
+                       font-family: 'Quicksand', sans-serif !important;
+                       margin: 0;
+                       padding: 0;
+                   }
+        
+                   .cards-container{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill,320px);
+                    gap: 26px;
+                    place-content:center;
+                   }
+        
+                   .product-card{
+                    width: 320px;
+                    border: 1px solid var(--very-ligth-pink);
+                   }
+        
+                   .product-card img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                    object-fit: cover;
+                   }
+        
+                   .product-info{
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                   }
+
+                   .detalles{
+                    display: none;
+                   }
+
+                   .contenedor-empleado
+        {
+            display: grid;
+            place-content:center;
+
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            margin: -25px 0 0 -25px; 
+            font-size: 30px
+
+
+        }
+        
+        span
+        {
+            display: block;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 51ch;
+
+            animation: typing 5s steps(51),
+            blink .5s infinite step-end alternate;
+            overflow: hidden;
+        }
+
+        @keyframes typing{
+            from{ width: 0;}
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent;}
+        }
+
+                   
+        
+        
+        
+        
+      
+    </style>
+</head>
+<body>
+   
+
+
+
+<header id="header">
+    <div class="header-div">
+        <div class="imagen-nombre">
+            <img src="./imagenes/nombre.png" alt="inversiones diomardi sas"  id="imagen-nombre-1">
+        </div>
+
+        <nav class="navegacion">
+
+                <button class="boton-menu" > Menu   
+                </button>
+
+                 <ul class="menu"  >
+                    <li class="items-menu"><a href="inicio.html" class="opciones-menu"  >Inicio</a></li>
+                    <li class="items-menu"><a href="productos.html" class="opciones-menu" >Productos</a></li>
+                    <li class="items-menu"><a href="ubicaciones.html" class="opciones-menu" >Ubicaciones</a></li>
+                    <li class="items-menu"><a href="empleados.html" class="opciones-menu" >Empleados</a></li>
+                    <li class="items-menu"><a href="trabajo.html" class="opciones-menu" > Trabajo</a></li>
+                </ul>
+                
+                <div>
+
+                    <div class="navbar-right">
+                     <ul class="boton-menu-desktop">
+                        <button class="navbar-email" > Menu   
+                        </button>
+                        
+                      </ul>
+                    </div>
+                
+                    <div class="desktop-menu inactive">
+                      <ul>
+                        <li>
+                          <a href="./inicio.css" class="title">inicio</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html" class="title">productos</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html" class="title">ubicaciones</a>
+                        </li>
+                        <li>
+                            <a href="./empleados.html" class="title">Empleados</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html" class="title">Contacto</a>
+                        </li>
+                  
+                       
+                      </ul>
+                    </div>
+
+                    <aside id="shoppingCartContainer" class="inactive">
+                        
+                  
+                    </div>
+
+        </nav>
+  
+
+
+</header>
+
+
+<div class="menu-desplegable inactive">
+        <ul class="menu-desplegable-2" >
+                        
+            <li class="items-menu-2"><a href="index.html" class="a" id="a">inicio</a></li>
+            <li class="items-menu-2"><a href="produtos.html" class="a" id="a">Productos</a></li>
+            <li class="items-menu-2"><a href="empleados.html" class="a" id="a">ubicaciones</a></li>
+            <li class="items-menu-2"><a href="empleados.html" class="a" id="a">empleados</a></li>
+            <li class="items-menu-2"><a href="contacto.html" class="a" id="a">Contacto</a></li>
+        </ul>
+</div>
+
+<section class="menu-mobile">
+
+    <div>
+        <img src="./imagenes/nombre.png" alt="inversiones diomardi sas">
+    </div>
+
+  <ul>
+
+    <li>
+        <a href="./inicio.html">inicio</a>
+    </li>
+
+    <li>
+        <a href="productos.html">Productos</a>
+    </li>
+
+    <li>
+        <a href="ubicaciones.html">Ubicaciones</a>
+    </li>
+
+    <li>
+        <a href="empleados.html">Empleados</a>
+    </li>
+
+    <li>
+        <a href="/">¿Quienes somos?</a>
+    </li>
+
+    <li>
+        <a href="/">Contacto</a>
+    </li>
+
+
+  </ul>
+
+
+  <ul>
+
+    <li>
+        <a href="" class="name">Inversiones diomardi sas</a>
+    </li>
+
+  </ul>
+
+  <div class="div-botton">
+    <button class="exit">Exit</button>
+  </div>
+
+</section>
+
+<section class="contenedor-empleado"> <span>Aun se encuentra en proceso de desarrollo Esperalo muy pronto!</span></section>
+
+</body>
+<script src="script.js"></script>
+<script src="mobile.js"></script>

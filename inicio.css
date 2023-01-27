@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html
+{
+    overflow-x: hidden;
+    display: block;
+}
+
+
+body
+{
+    overflow-x: hidden;
+    background: white;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.navegacion,.menu,.items-menu,.slider-contenedor,.contenido-slider,#header,#imagen-logo-completa
+{
+    width: 100%;
+    height: auto;
+}
+
+#imagen-nombre-1
+{
+    width: 200px;
+}
+
+#header
+{
+    background-color: rgba(255, 255, 255, .8);
+    position: fixed;
+    top: 0;
+    left: 0;  
+    border-bottom: 1px solid grey;
+    z-index: 999;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00);
+
+    align-items: center;
+    height: 70px;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 100%;
+          
+}
+
+
+.boton-menu
+{
+    display: none;
+    color: var(--black);
+    /* margin-top: 20px; */
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--very-ligth-pink);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md) !important;
+    font-weight: bold;
+    height: 35px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: 'Quicksand', sans-serif !important;
+    
+}
+
+
+.header-div,.slider-contenedor
+{
+    display: flex;
+    
+}
+
+.imagen-nombre,.navegacion
+{
+    
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+.navegacion
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end                                                                                                                                                                                                                  
+}
+
+
+.menu
+{
+    display:inline-flex;
+    float: right;
+    font-size: 26px;
+}
+
+.items-menu
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+       
+}
+
+.menu-desplegable-2
+{
+    list-style: none;
+}
+
+
+.opciones-menu
+{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 26px;
+    font-weight: bold;
+    
+}
+    
+
+
+
+
+.opciones-menu:hover
+{
+    /* color:rgb(255, 174, 67);
+    text-decoration:underline; */
+
+    border-bottom: 2px solid #000000;
+    transition: border-bottom .60s linear;
+    
+    
+}
+
+.inactive
+{
+    display: none;
+}
+
+
+.contenido-slider
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink:0;
+    margin-top: 70px !important;
+}
+ 
+
+.div-contenido-2-2
+{
+    margin: 0;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cajas
+{
+    margin: 20px;
+    width: 260px;
+    height: 161px;
+    border-radius: 30px;
+   
+}
+
+#carrito
+{
+    width: 100px;
+    height: 100px;
+}
+
+#opciones
+{
+    border:2px solid black;
+    border-radius: 30px;
+    width: 260px;
+    height: 161px;
+}
+
+
+#opciones:hover
+{
+    border: 4px solid black;   
+
+}
+
+
+#redes-sociales
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+}   
+
+
+#div-redes-sociales
+{
+    display: flex;
+}
+
+
+.figure-redes-sociales
+{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes
+{
+    width: 50px;
+    height: 50px;
+}
+
+#redes:hover
+{
+    width: 55px;
+    height: 55px;
+}
+
+
+#div-logo-completo-1
+{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-logo-completo-1
+{
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#div-pie-de-pagina
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 2vh;
+    border-top: 1px solid rgb(214, 214, 214)!important;
+
+}
+
+
+
+
+
+
+
+/**-----------------  DISEÑO PARA MOVILES RESPONSIVE ------------------*/
+
+
+@media only screen and (max-width:571px) 
+{
+
+    #header
+    {
+        background-color: transparent;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navegacion
+    {
+      display: flex;
+      margin: 0; 
+    }
+
+    .boton-menu
+    {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu
+    {
+        display: none;
+    }
+    
+    a
+    {
+        font-size: 6vw;
+    }
+
+    .imagen-principal{
+        width: 100%;
+        height: 130px;
+    }
+
+    .menu-desplegable-2
+    {
+        text-align: center;
+    }
+
+
+    .items-menu-2
+    {
+        font-size: 6vw;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        margin: 5px;
+    }
+
+    #div-contenido
+    {
+    
+      margin-top: 0;
+
+    }
+
+    #imagen-nombre-1
+    {
+      width: 100%;
+      height: auto;
+    }
+   
+    .div-contenido-one
+    {
+      display: none;
+    }
+    
+    .div-contenido-tow
+    {
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    }
+     
+    
+    #empleados-png
+    {
+        width: 100%;
+        height: auto;
+       
+    }
+
+   
+    
+
+    .div-contenido-2-2
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+   }
+
+   .figure-redes-sociales
+{
+    margin: 2px;
+}
+
+
+
+ #div-redes-sociales
+ {
+     align-items: center;
+ }
+
+ #redes
+ {
+     width: 35px;
+     height: 35px;
+ }
+
+ #imagen-logo-completa
+ {
+    width: 180px;
+    height: 60px;
+ }
+   
+ #empleados-png
+ {
+     width: 100%;
+     height: auto;
+ }
+
+ .boton-menu-desktop{
+     display: none;
+ }
+
+
+
+}
+
+/* ------------------------------DISEÑO RESPONSIVE PARA TABLET---------------*/
+
+
+@media only screen and (min-width:571px) and (max-width:868px)
+{
+
+    
+    .menu
+    {
+        display: none;
+    }
+
+
+    #imagen-nombre-1
+    {
+      width: 200px;
+      height: 80px;
+    }
+   
+    .div-contenido-one
+    {
+      display: none;
+    }
+    
+    #div-contenido-2
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-contenido-2-2
+    {
+        display: flex;
+        flex-direction: column; 
+    }
+
+
+    #div-contenido
+    {
+    
+      margin-top: 80px;
+
+    }
+
+    #header
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .menu
+    {
+        font-size: 20px;
+    }
+
+   /* General */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  
+  .inactive {
+    display: none;
+  }
+  
+  .navbar-left ul,
+  .navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex ;
+    align-items: center;
+    height: 60px;
+  }
+  .navbar-left {
+    display: flex;
+  }
+  .navbar-left ul {
+    margin-left: 12px;
+  }
+  .navbar-left ul li a,
+  .navbar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .navbar-left ul li a:hover,
+  .navbar-right ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+  }
+  .navbar-email
+  {
+    cursor: pointer;
+    font-size: var(--sm);
+    /* margin-right: 12px; */
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--very-ligth-pink);
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--md) !important;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+  }
+
+  .navbar-shopping-cart {
+    position: relative;
+  }
+  .navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Menu en desktop */
+  .desktop-menu {
+    position: absolute;
+    top: 60px;
+    right: 44px;
+    background: var(--white);
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+  }
+  .desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu ul li {
+    text-align: end;
+  }
+  
+  
+  .desktop-menu ul li:last-child a {
+    color: black;
+    font-size: var(--sm);
+  }
+  .desktop-menu ul li a {
+    color: var(--back);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+    
+
+
+}
+
+/*------------------diseño responsive para laptop-------------*/
+
+@media only screen and (min-width:860px)
+{
+ 
+    .imagen-principal
+    {
+        position: static;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .contenido-slider
+    {
+        margin-top: 80px;
+
+    }
+    
+    .boton-menu-desktop{
+        display: none;
+    }
+   
+
+}
+
+
+
+/* general */
+
+
+
+  

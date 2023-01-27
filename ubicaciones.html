@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ubicaciones</title>
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="ubicaciones.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <style>
+
+:root{
+                    --white: #FFFFFF;
+                    --black: #000000;
+                    --very-ligth-pink: #C7C7C7;
+                    --text-input-field: #F7F7F7;
+                    --hospital-green: #ACD9B2;
+                  }
+           
+                  body{
+                       font-family: 'Quicksand', sans-serif !important;
+                       margin: 0;
+                       padding: 0;
+                   }
+        
+                   .cards-container{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill,320px);
+                    gap: 26px;
+                    place-content:center;
+                   }
+        
+                   .product-card{
+                    width: 320px;
+                    border: 1px solid var(--very-ligth-pink);
+                   }
+        
+                   .product-card img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                    object-fit: cover;
+                   }
+        
+                   .product-info{
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                   }
+
+                   .detalles{
+                    display: none;
+                   }
+
+                   span
+                   {
+
+                    display: block;
+                    white-space: nowrap;
+                    border-right: 4px solid;
+                    width: 26ch;
+
+                    animation: typing 5s steps(26),
+                    blink .5s infinite step-end alternate;
+                    overflow: hidden;
+
+                   }
+
+                   @keyframes typing{
+            from{ width: 0;}
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent;}
+        }
+
+                   
+        
+        
+        
+        
+      
+    </style>
+</head>
+<body>
+   
+
+
+
+<header id="header">
+    <div class="header-div">
+        <div class="imagen-nombre">
+            <img src="./imagenes/nombre.png" alt="inversiones diomardi sas"  id="imagen-nombre-1">
+        </div>
+
+        <nav class="navegacion">
+
+                <button class="boton-menu" > Menu   
+                </button>
+
+                 <ul class="menu"  >
+                    <li class="items-menu"><a href="inicio.html" class="opciones-menu"  >Inicio</a></li>
+                    <li class="items-menu"><a href="productos.html" class="opciones-menu" >Productos</a></li>
+                    <li class="items-menu"><a href="empleados.html" class="opciones-menu" >Empleados</a></li>
+                    <li class="items-menu"><a href="trabajo.html" class="opciones-menu" >Trabajo</a></li>
+                    <li class="items-menu"><a href="contacto.html" class="opciones-menu" > Contacto</a></li>
+                </ul>
+                
+                <div>
+
+                    <div class="navbar-right">
+                     <ul class="boton-menu-desktop">
+                        <button class="navbar-email" > Menu   
+                        </button>
+                        
+                      </ul>
+                    </div>
+                
+                    <div class="desktop-menu inactive">
+                      <ul>
+                        <li>
+                          <a href="inicio.html" class="title">inicio</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html" class="title">productos</a>
+                        </li>
+                        <li>
+                            <a href="./empleados.html" class="title">empleados</a>
+                        </li>
+                        <li>
+                            <a href="./trabajo.html" class="title">Trabajo</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html" class="title">Contacto</a>
+                        </li>
+                  
+                       
+                      </ul>
+                    </div>
+
+                    <aside id="shoppingCartContainer" class="inactive">
+                        
+                  
+                    </div>
+
+        </nav>
+  
+
+
+</header>
+
+
+<div class="menu-desplegable inactive">
+        <ul class="menu-desplegable-2" >
+                        
+            <li class="items-menu-2"><a href="inicio.html" class="a" id="a">inicio</a></li>
+            <li class="items-menu-2"><a href="produtos.html" class="a" id="a">Productos</a></li>
+            <li class="items-menu-2"><a href="empleados.html" class="a" id="a">Empleados</a></li>
+            <li class="items-menu-2"><a href="trabajo.html" class="a" id="a">Trabajo</a></li>
+            <li class="items-menu-2"><a href="contacto.html" class="a" id="a">Contacto</a></li>
+        </ul>
+</div>
+
+<div  class="div-conoce-una-tienda">
+    <h1 class="encuentra-tienda"><span>Encuentra una tienda cerca de ti </span></h1>
+</div>
+
+<div id="titulo-ubicaciones">
+    <h1 id="ubicaciones">Ubicaciones</h1>
+</div>
+
+<section class="menu-mobile">
+
+    <div>
+        <img src="./imagenes/nombre.png" alt="inversiones diomardi sas">
+    </div>
+
+  <ul>
+
+    <li>
+        <a href="./inicio.html">inicio</a>
+    </li>
+
+    <li>
+        <a href="productos.html">Productos</a>
+    </li>
+
+    <li>
+        <a href="empleados.html">Empleados</a>
+    </li>
+
+    <li>
+        <a href="trabajo.html">Trabaja con nosotros</a>
+    </li>
+
+    <li>
+        <a href="quienessomos.html">¿Quienes somos?</a>
+    </li>
+
+    <li>
+        <a href="contacto.html">Contacto</a>
+    </li>
+
+
+  </ul>
+
+
+  <ul>
+
+    <li>
+        <a href="" class="name">Inversiones diomardi sas</a>
+    </li>
+
+  </ul>
+
+  <div class="div-botton">
+    <button class="exit">Exit</button>
+  </div>
+
+</section>
+
+
+
+<section class="main-container">
+        <div class="cards-container">
+
+          <div class="product-card">
+
+              <div class="product-info">
+                  <label for="" id="almacenes">   
+                  <div id="numero-almacen">
+                      <h3>1</h3>
+                  </div>
+                  <div id="datos-almacen">
+                      <h3> los Reblujos De Pati Pasarela </h3>
+                      <p>Centro Comercial Cosmocentro | Local 180</p>
+                      <p>Cali - Valle Del Cauca</p>
+
+                      <div class="detalles-pasarela">
+                        <img src="./ALMACENES COLOR/ALMACENES COLOR/PASARELA.PNG" alt="">
+                        <p>Telefono: 3135667699</p>
+                     </div>
+
+                      <div class="div-boton"> 
+                          <a href="#">Como llegar</a>
+                          <button class="boton-1">Mas detalles</button>  
+                      </div>
+                  </div>
+              </label>
+             </div>
+          </div>
+
+          <div class="product-card">
+
+                  <div class="product-info">
+                  <label for="" id="almacenes">   
+                      <div id="numero-almacen">
+                          <h3>2</h3>
+                      </div>
+                      <div id="datos-almacen">
+                          <h3> los Reblujos De Pati Cosmocentro </h3>
+                          <p>Centro Comercial Cosmocentro | Local 180</p>
+                          <p>Cali - Valle Del Cauca</p>
+
+                          <div class="detalles-cosmocentro">
+                            <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMOCENTRO.PNG" alt="">
+                            <p>Telefono: 3135667699</p>
+                            
+
+                            </div>
+
+                          <div class="div-boton"> 
+                              <a href="#">Como llegar</a>
+                              <button class="boton-2">Mas detalles</button>
+                              
+                          </div>
+
+                          
+      
+                      </div>
+          
+                  </label>
+              </div>
+          </div>
+
+          <div class="product-card">
+
+              <div class="product-info">
+              <label for="" id="almacenes">   
+                  <div id="numero-almacen">
+                      <h3>3</h3>
+                  </div>
+                  <div id="datos-almacen">
+                      <h3> los Reblujos De Pati Valle de lili </h3>
+                      <p>Centro Comercial Cosmocentro | Local 180</p>
+                      <p>Cali - Valle Del Cauca</p>
+
+                      <div class="detalles-valledelili">
+                        <img src="./ALMACENES COLOR/ALMACENES COLOR/VALLE DEL LILI.PNG" alt="">
+                        <p>Telefono: 3135667699</p>
+                        
+
+                        </div>
+
+                      <div class="div-boton">
+
+
+                          <a href="#">Como llegar</a>
+                          <button class="boton-3">Mas detalles</button>
+                          
+                      </div>
+
+                      
+  
+                  </div>
+      
+              </label>
+          </div>
+         </div>
+
+         <div class="product-card">
+
+          <div class="product-info">
+          <label for="" id="almacenes">   
+              <div id="numero-almacen">
+                  <h3>4</h3>
+              </div>
+              <div id="datos-almacen">
+                  <h3> los Reblujos De Pati Mercar </h3>
+                  <p>Centro Comercial Cosmocentro | Local 180</p>
+                  <p>Cali - Valle Del Cauca</p>
+
+                  <div class="detalles-mercar">
+                    <img src="./ALMACENES COLOR/ALMACENES COLOR/MERCAR.PNG" alt="">
+                    <p>Telefono: 3135667699</p>
+                    
+
+                    </div>
+                  <div class="div-boton"> 
+                      <a href="#">Como llegar</a>
+                      <button class="boton-4">Mas detalles</button>
+                      
+                  </div>
+
+                  
+
+              </div>
+  
+          </label>
+         </div>
+         </div>
+
+  <div class="product-card">
+
+      <div class="product-info">
+      <label for="" id="almacenes">   
+          <div id="numero-almacen">
+              <h3>5</h3>
+          </div>
+          <div id="datos-almacen">
+              <h3> los Reblujos De Pati Cosmo belleza </h3>
+              <p>Centro Comercial Cosmocentro | Local 180</p>
+              <p>Cali - Valle Del Cauca</p>
+
+              <div class="detalles-cosmobelleza">
+                <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMOBELLEZA.PNG" alt="">
+                <p>Telefono: 3135667699</p>
+                
+
+                </div>
+
+              <div class="div-boton"> 
+                  <a href="#">Como llegar</a>
+                  <button class="boton-5">Mas detalles</button>
+                  
+              </div>
+
+              
+
+          </div>
+
+      </label>
+  </div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>6</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati Unicentro </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-unicentro">
+            <img src="./ALMACENES COLOR/ALMACENES COLOR/UNICENTRO.PNG" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-6">Mas detalles</button>
+              
+          </div>
+
+          
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>7</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati chipichape </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-chipichape">
+            <img src="./ALMACENES COLOR/ALMACENES COLOR/CHIPICHAPE.PNG" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-7">Mas detalles</button>
+              
+          </div>
+
+         
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>8</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati Cosmo el si </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-cosmoelsi">
+            <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMO EL SI.PNG" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-8">Mas detalles</button>
+              
+          </div>
+
+         
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>9</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati Almacen avn sexta </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-almavnsexta">
+            <img src="./ALMACENES COLOR/ALMACENES COLOR/AV.SEXTA.PNG" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-9">Mas detalles</button>
+              
+          </div>
+
+         
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>10</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati calima nuevo </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-calimanuevo">
+            <img src="./ALMACENES COLOR/ALMACENES COLOR/CALIMA NUEVO.PNG" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-10">Mas detalles</button>
+              
+          </div>
+
+          
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>11</h3>
+      </div>    
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati Sala de ventas </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+          <div class="detalles-saladeventas">
+            <img src="./imagenes/Imagen de WhatsApp 2022-12-28 a las 13.22.54.jpg" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-11">Mas detalles</button>
+              
+          </div>
+
+          
+
+      </div>
+
+  </label>
+</div>
+</div>
+
+<div class="product-card">
+
+  <div class="product-info">
+  <label for="" id="almacenes">   
+      <div id="numero-almacen">
+          <h3>12</h3>
+      </div>
+      <div id="datos-almacen">
+          <h3> los Reblujos De Pati bodega principal </h3>
+          <p>Centro Comercial Cosmocentro | Local 180</p>
+          <p>Cali - Valle Del Cauca</p>
+
+          <div class="detalles-bodegaprincipal">
+            <img src="./imagenes/Imagen de WhatsApp 2022-12-28 a las 13.22.54.jpg" alt="">
+            <p>Telefono: 3135667699</p>
+            
+
+            </div>
+          <div class="div-boton"> 
+              <a href="#">Como llegar</a>
+              <button class="boton-12">Mas detalles</button>
+              
+          </div>
+
+          
+
+      </div>
+
+  </label>
+</div>
+
+
+
+
+
+
+</div>
+
+        
+
+</section>
+
+
+<section id="text-opcional">
+    <p>Nuestros horarios estan sujetos a cambios por temporada</p>
+</section>
+
+<section id="redes-sociales">
+    <div id="div-redes-sociales">
+         <figure for="" class="figure-redes-sociales">
+          <a href="https://www.facebook.com/LosReblujosDePatiOnline/"><img src="./logos-nuevos/facebook.svg" alt="facebook" id="redes"></a>
+          
+         </figure>
+
+         <figure for=""class="figure-redes-sociales" >
+          <a href="https://www.instagram.com/losreblujosdepati/?hl=es"><img src="./logos-nuevos/instagram.svg" alt="instagram" id="redes"></a>
+          
+         </figure>
+
+         <figure for="" class="figure-redes-sociales"id="redes">
+          <a href="https://twitter.com/losreblujos">
+              <img src="./logos-nuevos/twitter.svg" alt="twiter" id="redes" >
+          </a>
+          
+          </figure>
+
+          <figure for="" class="figure-redes-sociales">
+              <a href="https://api.whatsapp.com/send?phone=573135667699"><img src="./logos-nuevos/whatsapp.svg" alt="whastapp"id="redes" ></a>
+            
+         </figure>
+    </div>
+
+
+</section>
+
+
+    
+
+
+
+
+<section id="logo-completo">
+  <div id="div-logo-completo-1">
+      <figure class="figure-logo-completo-1">
+          <a href="">
+           <img src="./imagenes/nombre.png" alt="inversiones diomardi" id="imagen-logo-completa">
+          </a>
+      </figure>
+  </div>
+</section>
+ <script>
+
+const menuEmail = document.querySelector('.navbar-email');
+ const desktopMenu = document.querySelector('.desktop-menu');
+ const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+ menuEmail.addEventListener('click', toggleDesktopMenu);
+
+ function toggleDesktopMenu()
+ {
+   const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
+ 
+   if (!isAsideClosed) 
+   {
+     shoppingCartContainer.classList.add('inactive');
+   }
+   
+   desktopMenu.classList.toggle('inactive');
+ 
+ }
+ 
+
+
+
+</script>
+
+
+</body>
+<script src="ubicaciones.js"></script>
+</html>

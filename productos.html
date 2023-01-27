@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">
+    <title>Productos</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    
+    <style>
+
+:root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-ligth-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+          }
+   
+          body{
+               font-family: 'Quicksand', sans-serif !important;
+               margin: 0;
+               padding: 0;
+           }
+
+           .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,300px);
+            gap: 26px;
+            place-content:center;
+           }
+
+           .product-card{
+            width: 300px;
+            
+           }
+
+           .product-card img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 1px solid var(--very-ligth-pink);
+           }
+
+           .product-info{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             
+           }
+
+           .product-info figure img {
+            width: 35px;
+            height: 35px;
+           }
+
+           .product-info figure {
+            margin: 0;
+           }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <header id="header">
+        <div class="header-div">
+           <div class="imagen-nombre">
+               <img src="./imagenes/nombre.png" alt="inversiones diomardi sas"  id="imagen-nombre-1">
+           </div>
+
+           <nav class="navegacion">
+
+                    <button class="boton-menu" > Menu   
+                   </button> 
+
+                    <ul class="menu"  >
+                       <li class="items-menu"><a href="inicio.html" class="opciones-menu"  >inicio</a></li>
+                       <li class="items-menu"><a href="ubicaciones.html" class="opciones-menu" >Ubicaciones</a></li>
+                       <li class="items-menu"><a href="empleados.html" class="opciones-menu" >Empleados</a></li>
+                       <li class="items-menu"><a href="trabajo.html" class="opciones-menu" >Trabajo</a></li>
+                       <li class="items-menu"><a href="contacto.html" class="opciones-menu" > Contacto</a></li>
+                   </ul> 
+                   
+                   <div>
+
+                        <div class="navbar-right">
+                        <ul class="boton-menu-desktop">
+                           <button class="navbar-email" > Menu   
+                           </button>
+                           
+                         </ul>
+                       </div> 
+                   
+                        <div class="desktop-menu inactive">
+                         <ul>
+                           <li>
+                             <a href="./inicio.html" class="title">inicio</a>
+                           </li>
+                           <li>
+                               <a href="./ubicaciones.html" class="title">ubicaciones</a>
+                           </li>
+                           <li>
+                               <a href="./empleados.html" class="title">empleados</a>
+                           </li>
+                           <li>
+                               <a href="./trabajo.html" class="title">Trabajo</a>
+                           </li>
+                           <li>
+                               <a href="./produtos.html" class="title">Contacto</a>
+                           </li>
+                     
+                          
+                         </ul>
+                       </div>
+
+                       <aside id="shoppingCartContainer" class="inactive">
+                           
+                     
+                       </div>
+
+           </nav>
+          
+</header>
+
+<div id="texto-principal">
+    <h1 >CONOCE ALGUNOS DE NUESTROS PRODUCTOS POR CATEGORIA</h1>
+ </div>
+
+<section class="menu-mobile">
+
+    <div>
+        <img src="./imagenes/nombre.png" alt="inversiones diomardi sas">
+    </div>
+
+  <ul>
+
+    <li>
+        <a href="./inicio.html">inicio</a>
+    </li>
+
+    <li>
+        <a href="ubicaciones.html">Ubicaciones</a>
+    </li>
+
+    <li>
+        <a href="empleados.html">Empleados</a>
+    </li>
+
+    <li>
+        <a href="trabajo.html">Trabaja con nosotros</a>
+    </li>
+
+    <li>
+        <a href="/">¿Quienes somos?</a>
+    </li>
+
+    <li>
+        <a href="/">Contacto</a>
+    </li>
+
+
+  </ul>
+
+
+  <ul>
+
+    <li>
+        <a href="" class="name">Inversiones diomardi sas</a>
+    </li>
+
+  </ul>
+
+  <div class="div-botton">
+    <button class="exit">Exit</button>
+  </div>
+
+</section>
+
+
+<section class="main-container">
+    <div class="cards-container">
+
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_Cocina.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Cocina</h2>
+                  <p>Cocinar es un arte en el que necesitas las herramientas perfectas para conquistar el paladar de tus seres queridos. Encuentra sartenes, ollas, tablas para picar, temporizadores y mucho más. Visita tu sala más cercana.</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_Home_B.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Decoración y hogar</h2>
+                  <p>Si estás pensando en remodelar y agregar nuevos estilos en la decoración de tu hogar u oficina, el lugar ideal para encontrar: portarretratos, espejos, cuadros decorativos, floreros, adornos de cerámica, cortinas, alfombras y mucho más. ¡Te esperamos!</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Limpieza1.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Limpieza</h2>
+                  <p>Lo mejores productos para el cuidado y limpieza del hogar u oficinas como: limpiadores, jabones, desinfectantes, trapeadores, paños de microfibra y mucho más. ¡Visita tu tienda más cercana!</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_saludyBelleza.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Salud y belleza</h2>
+                  <p>Somos el aliado perfecto para ti con nuestros productos de salud y belleza. Encuentra mascarillas, desodorantes, espejos faciales y más productos para el cuidado de la piel. Visítanos en tu tienda más cercana.</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Comida.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Alimentos</h2>
+                  <p>Variedad de alimentos, bebidas, snacks para tu hogar u oficina, como: dulces, chocolates, galletas, fritos, enlatados, gaseosas y más para complementar tu comida o darte gusto. ¡Encuéntralo todo!</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Mascota1.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Mascotas</h2>
+                  <p>Sabemos lo importante que es tu mascota para ti, por eso también encuentras, los mejores productos para su cuidado: juguetes, cama, ropa, collares, correas, peines, comederos, comida, shampoo, jabones, y mucho más.</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_oficina.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Oficina y papelería</h2>
+                  <p>Encuentra todo en papelería y material para oficina a excelentes precios y con la mejor calidad. Tenemos para ti lápices, lapiceros, colores, marcadores, engrapadoras, pegamento, páginas, cartulinas, agendas, carpetas, cuadernos, y mucho más. ¡Visítanos en nuestra tienda mas cercana más cercana!</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Bebe.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Artículos para bebé</h2>
+                  <p>Juguetes, coches, biberones, alimentos, toallas húmedas, pañales, ropa y todo lo que necesitas para el cuidado de tu bebé lo puedes encontrar. Visita tu sala más cercana.</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Cristaleria.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Plásticos y Cristalería</h2>
+                  <p>Para el uso diario, en tu hogar y oficina encuentra: copas, tazas, vasos, envases, vajillas, servilletas, platos, cubiertos, depósitos plásticos y más. ¡Te esperamos!</p>
+              </div>
+          </div>
+      </div>
+      <div class="product-card">
+
+          <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_fiesta.png" alt="">
+          <div class="product-info">
+              <div>
+                  <h2>Fiesta</h2>
+                  <p>Organizar tus fiestas y sorprender a los que más quieres es muy fácil con nuestra variedad en decoración para cumpleaños, globos, empaques de regalo, tarjetas, chongas, y mucho más. Visita tu sala más cercana.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="product-card">
+
+        <img src="./img-pruebas/DC19_Nov_Fotos_Banners_PagWeb2_Ferreteria.png" alt="">
+        <div class="product-info">
+            <div>
+                <h2>Ferretería y Jardinería</h2>
+                <p>Comienza esos proyectos de hogar y ten el jardín de tus sueños con nuestros productos de jardinería y ferretería. Encuentra herramientas, martillos, taladros, serruchos, macetas y mucho más, ¡visítanos!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+
+        <img src="./img-pruebas/DC19_Oct_Fotos_PagWeb_Banners_juguetes_B.png" alt="">
+        <div class="product-info">
+            <div>
+                <h2>Juguetes</h2>
+                <p>Regálale a los más pequeños un mundo lleno de creatividad con nuestros juguetes para niñas, niños, bebés y enséñales de una forma divertida a aprender con nuestros juguetes didácticos o educativos. Ven a tu nuestra tienda más cercana.</p>
+            </div>
+        </div>
+    </div>
+
+           </div>
+
+
+
+    
+
+
+</section>
+ 
+    <section id="text-opcional">
+        <p>La disponibilidad de nuestro inventario está sujeta a existencias y rotación de ventas en cada una de nuestros punto de venta.</p>
+    </section>
+
+    <section id="redes-sociales">
+        <div id="div-redes-sociales">
+             <figure for="" class="figure-redes-sociales">
+              <a href="https://www.facebook.com/LosReblujosDePatiOnline/"><img src="./logos-nuevos/facebook.svg" alt="facebook" id="redes"></a>
+              
+             </figure>
+
+             <figure for=""class="figure-redes-sociales" >
+              <a href="https://www.instagram.com/losreblujosdepati/?hl=es"><img src="./logos-nuevos/instagram.svg" alt="instagram" id="redes"></a>
+              
+             </figure>
+
+             <figure for="" class="figure-redes-sociales"id="redes">
+              <a href="https://twitter.com/losreblujos">
+                  <img src="./logos-nuevos/twitter.svg" alt="twiter" id="redes" >
+              </a>
+              
+              </figure>
+
+              <figure for="" class="figure-redes-sociales">
+                  <a href="https://api.whatsapp.com/send?phone=573135667699"><img src="./logos-nuevos/whatsapp.svg" alt="whastapp"id="redes" ></a>
+                
+             </figure>
+        </div>
+
+
+  </section>
+
+  <section id="logo-completo">
+    <div id="div-logo-completo-1">
+        <figure class="figure-logo-completo-1">
+            <a href="">
+             <img src="./imagenes/nombre.png" alt="inversiones diomardi" id="imagen-logo-completa">
+            </a>
+        </figure>
+    </div>
+</section>
+
+ 
+</body>
+<script>
+
+
+// /**
+//  * Despliega el menu en movile
+//  */
+//  var botonMenu = document.querySelector(".boton-menu");
+// var menuDesplegable = document.querySelector(".menu-desplegable");
+// botonMenu.addEventListener("click",menu)
+
+
+
+// function menu()
+// {
+//     menuDesplegable.classList.toggle("inactive")
+
+// }
+
+// /**
+//  * querySelectorAll retorna la lista de elementos
+//  */
+// let lista = document.querySelectorAll("div")
+// console.log(lista)
+
+
+
+/**
+ * Despliega el menu en laptos 
+ */
+
+ const menuEmail = document.querySelector('.navbar-email');
+ const desktopMenu = document.querySelector('.desktop-menu');
+ const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+ menuEmail.addEventListener('click', toggleDesktopMenu);
+
+ function toggleDesktopMenu()
+ {
+   const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
+ 
+   if (!isAsideClosed) 
+   {
+     shoppingCartContainer.classList.add('inactive');
+   }
+   
+   desktopMenu.classList.toggle('inactive');
+ 
+ }
+ 
+
+
+
+</script>
+<script src="productos.js"></script>
+</html>

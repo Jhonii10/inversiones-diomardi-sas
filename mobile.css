@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+
+
+:root
+       {
+         --white: #FFFFFF;
+         --black: #000000;
+         --very-ligth-pink: #C7C7C7;
+         --text-input-field: #F7F7F7;
+         --hospital-blue: #10c1d8;
+         --sm:16px;
+         --md:20px;
+         --lg:24px;
+       }
+      body
+       {
+            font-family: 'Quicksand', sans-serif !important;
+            margin: 0;
+            padding: 0;
+       }
+        .menu-mobile
+        {
+            padding: 24px;
+            display: none;
+        }
+
+        .menu-mobile div
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-mobile img
+        {
+            width: 250px;
+            height: 80px;
+            
+        }
+
+        .menu-mobile a 
+        {
+            text-decoration: none;
+            color: var(--black);
+            font-weight:bold ;
+            font-size: var(--lg);
+        }
+
+        .menu-mobile ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .menu-mobile ul:nth-child(1){
+            border-bottom: 1px solid var(--very-ligth-pink);
+        }
+
+        .menu-mobile ul li {
+            margin-bottom: 24px;
+        }
+
+        .name{
+            font-size: var(--sm) !important;
+            font-weight: 300 !important;
+            color: rgb(83, 83, 225) !important;
+        }
+
+        .div-botton{
+            padding-top: 40px;
+            border-top: 1px solid var(--very-ligth-pink);
+        }
+
+        .exit{
+            color: var(--black);
+            margin-top: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--very-ligth-pink);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md) !important;
+            font-weight: bold;
+            height: 50px;
+            margin-left: 24px;
+            margin-right: 24px;
+            font-family: 'Quicksand', sans-serif !important;
+        }

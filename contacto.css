@@ -1,0 +1,74 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+  }
+
+  body{
+       font-family: 'Quicksand', sans-serif !important;
+       margin: 0;
+       padding: 0;
+   }
+
+   
+
+.first-container
+{
+background-color:var(--text-input-field);
+overflow: hidden;
+text-rendering: optimizeLegibility;
+margin-top: 70px;
+
+}
+
+.two-container-1
+{
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+background-color: #fff;
+max-width: 1138px;
+width: 100%;
+
+}
+
+.two-container-2
+{
+margin-left: auto;
+margin-right: auto;
+max-width: 788px;
+width: 100%;
+overflow: hidden;
+}
+
+.two-container-3
+{
+padding-top: 64px;
+padding-bottom: 72px;
+}
+
+.two-container-3-title
+{
+font-weight: bold;
+margin-bottom: 24px;
+font-size: 48px;
+}
+
+.two-container-4, .two-container-4-2
+{
+display: flex;
+}
+
+
+.two-container-4-2
+{
+margin-top: 30px;
+}
+
+
+
+
+
+

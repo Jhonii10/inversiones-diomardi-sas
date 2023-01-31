@@ -67,7 +67,7 @@
                             <a href="./empleados.html" class="title">Empleados</a>
                         </li>
                         <li>
-                            <a href="./produtos.html" class="title">Contacto</a>
+                            <a href="contacto.html" class="title">Contacto</a>
                         </li>
                   
                        
@@ -91,7 +91,7 @@
                         
             <li class="items-menu-2"><a href="index.html" class="a" id="a">inicio</a></li>
             <li class="items-menu-2"><a href="produtos.html" class="a" id="a">Productos</a></li>
-            <li class="items-menu-2"><a href="empleados.html" class="a" id="a">ubicaciones</a></li>
+            <li class="items-menu-2"><a href="ubicaciones.html" class="a" id="a">ubicaciones</a></li>
             <li class="items-menu-2"><a href="empleados.html" class="a" id="a">empleados</a></li>
             <li class="items-menu-2"><a href="contacto.html" class="a" id="a">Contacto</a></li>
         </ul>
@@ -152,7 +152,7 @@
 
         <div class="container-1-1">
 
-            <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.8562-6/192280464_531990491134394_2114850378645368968_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=Lw5I5N7INLUAX_g-Bb9&_nc_ht=scontent-bog1-1.xx&oh=00_AfBbTU3MVw-0d-vkmCGZ3MB7_PHyHy6hMTvXTgE0IWY9Lg&oe=63D48F3E" alt="">
+            <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.8562-6/192280464_531990491134394_2114850378645368968_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6825c5&_nc_ohc=bcAK5W1XVsgAX_57bSk&_nc_ht=scontent-bog1-1.xx&oh=00_AfBc4e5Vw_lQCfxk16RrXNg7TP2Q-eG8cp1amktVgcMh-A&oe=63DC783E" alt="foto de empleados">
 
         </div>
 
@@ -254,6 +254,29 @@
         
 
 </section>
+
+<script>
+
+    const menuEmail = document.querySelector('.navbar-email');
+    const desktopMenu = document.querySelector('.desktop-menu');
+    const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+    menuEmail.addEventListener('click', toggleDesktopMenu);
+   
+    function toggleDesktopMenu()
+    {
+      const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
+    
+      if (!isAsideClosed) 
+      {
+        shoppingCartContainer.classList.add('inactive');
+      }
+      
+      desktopMenu.classList.toggle('inactive');
+    
+    }
+    
+   
+   </script>
 
 
 

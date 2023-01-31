@@ -22,7 +22,7 @@ body
     font-family: 'Quicksand', sans-serif !important;
 }
 
-.navegacion,.menu,.items-menu,.slider-contenedor,.contenido-slider,#header,#imagen-logo-completa
+.navegacion,.menu,.items-menu,.slider-contenedor,.contenido-slider,#header
 {
     width: 100%;
     height: auto;
@@ -211,7 +211,44 @@ body
 #div-redes-sociales
 {
     display: flex;
+    gap: 10px;
 }
+
+.redes
+{
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color:black;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transition: color .33s linear .5s, border-color ease-out .5s, background-color .33s linear 0s;
+  vertical-align: bottom;
+  width: 48px;
+  z-index: 1;
+}
+
+.redes:hover
+{
+  background-color: black;
+  color: #fff;
+}
+
+#imagen-logo-completa
+{
+    width: 200px;
+    height: auto;
+}
+
+
+
+
 
 
 .figure-redes-sociales
@@ -249,8 +286,6 @@ body
 
 .figure-logo-completo-1
 {
-    width: 280px;
-    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -58,7 +58,6 @@ body
 {
     display: none;
     color: var(--black);
-    /* margin-top: 20px; */
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--very-ligth-pink);
@@ -131,18 +130,10 @@ body
 }
     
 
-
-
-
 .opciones-menu:hover
 {
-    /* color:rgb(255, 174, 67);
-    text-decoration:underline; */
-
     border-bottom: 2px solid #000000;
-    transition: border-bottom .60s linear;
-    
-    
+    transition: border-bottom .60s linear;    
 }
 
 .inactive
@@ -196,7 +187,6 @@ body
 #opciones:hover
 {
     border: 4px solid black;   
-
 }
 
 
@@ -244,34 +234,6 @@ body
 {
     width: 200px;
     height: auto;
-}
-
-
-
-
-
-
-.figure-redes-sociales
-{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#redes
-{
-    width: 50px;
-    height: 50px;
-}
-
-#redes:hover
-{
-    width: 55px;
-    height: 55px;
 }
 
 
@@ -345,6 +307,11 @@ body
     {
         font-size: 6vw;
     }
+
+    .contenido-slider
+   {
+    margin-top: 0 !important;
+   }
 
     .imagen-principal{
         width: 100%;
@@ -465,7 +432,6 @@ body
     #imagen-nombre-1
     {
       width: 200px;
-      height: 80px;
     }
    
     .div-contenido-one
@@ -496,7 +462,6 @@ body
     #header
     {
         width: 100%;
-        height: auto;
     }
 
     
@@ -505,39 +470,36 @@ body
         font-size: 20px;
     }
 
-   /* General */
-:root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --very-light-pink: #C7C7C7;
-    --text-input-field: #F7F7F7;
-    --hospital-green: #ACD9B2;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
-  }
   
-  .inactive {
+   .inactive 
+   {
     display: none;
-  }
+   }
   
   .navbar-left ul,
-  .navbar-right ul {
+  .navbar-right ul 
+   {
     list-style: none;
     padding: 0;
     margin: 0;
     display:flex ;
     align-items: center;
     height: 60px;
-  }
-  .navbar-left {
+   }
+
+  .navbar-left
+  {
     display: flex;
   }
-  .navbar-left ul {
+
+  .navbar-left ul
+  {
     margin-left: 12px;
   }
+
   .navbar-left ul li a,
-  .navbar-right ul li a {
+  .navbar-right ul li a 
+  {
     text-decoration: none;
     color: var(--very-light-pink);
     border: 1px solid var(--white);
@@ -545,15 +507,16 @@ body
     border-radius: 8px;
   }
   .navbar-left ul li a:hover,
-  .navbar-right ul li a:hover {
+  .navbar-right ul li a:hover 
+  {
     border: 1px solid var(--hospital-green);
     color: var(--hospital-green);
   }
+
   .navbar-email
   {
-    cursor: pointer;
+    /* cursor: pointer;
     font-size: var(--sm);
-    /* margin-right: 12px; */
     color: var(--black);
     background-color: var(--white);
     border-radius: 8px;
@@ -564,14 +527,30 @@ body
     font-weight: bold;
     height: 30px;
     margin-left: 24px;
+    margin-right: 24px; */
+
+    color: var(--black);
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--lg) !important;
+    font-weight: bold;
+    height: 36px;
+    margin-left: 24px;
     margin-right: 24px;
+    font-family: 'Quicksand', sans-serif !important;
+    padding: 0px 24px;
     
   }
 
-  .navbar-shopping-cart {
+  .navbar-shopping-cart
+  {
     position: relative;
   }
-  .navbar-shopping-cart div {
+  .navbar-shopping-cart div
+  {
     width: 16px;
     height: 16px;
     background-color: var(--hospital-green);
@@ -585,38 +564,59 @@ body
     justify-content: center;
     align-items: center;
   }
+
   
   /* Menu en desktop */
-  .desktop-menu {
+  .desktop-menu
+  {
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 44px;
     background: var(--white);
     height: auto;
-    border: 1px solid var(--very-light-pink);
+    border: 1px solid black;
     border-radius: 6px;
     padding: 20px 20px 0 20px;
+    background-color: rgba(255, 255, 255, .9);
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+    font-size: 18px;
+
   }
-  .desktop-menu ul {
+
+  .desktop-menu ul 
+  {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  .desktop-menu ul li {
+
+  .desktop-menu ul li
+  {
     text-align: end;
   }
   
-  
-  .desktop-menu ul li:last-child a {
+  .desktop-menu ul li:last-child a 
+  {
     color: black;
-    font-size: var(--sm);
   }
-  .desktop-menu ul li a {
+
+  .desktop-menu ul li a 
+  {
     color: var(--back);
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
   }
+
+  .imagen-principal
+    {
+
+        width: 100%;
+        height: 250px;
+    }
+    
+    
     
 
 
@@ -646,11 +646,3 @@ body
    
 
 }
-
-
-
-/* general */
-
-
-
-  

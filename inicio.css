@@ -108,7 +108,7 @@ body
 {
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style: none;   
        
 }
 
@@ -118,23 +118,51 @@ body
 }
 
 
-.opciones-menu
+.button-primary
 {
-    color:rgb(0, 0, 0);
+
+    cursor: pointer;
     text-decoration: none;
+    color: black;
     font-size: 20px;
-    letter-spacing: -0.01em;
-    line-height: 26px;
     font-weight: bold;
     
 }
     
 
-.opciones-menu:hover
+
+.button-primary:hover
 {
-    border-bottom: 2px solid #000000;
-    transition: border-bottom .60s linear;    
+    text-decoration: none;
 }
+
+.button-primary:hover > .span-primary::after
+{
+    width: 100%;
+}
+
+.span-primary
+{
+    position: relative;
+}
+
+.span-primary::after
+{
+  background-color: black;
+  bottom: -2px;
+  content:'';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: width .33s linear;
+  width: 0% ;
+}
+
+.button-primary:hover
+{
+    color: black;
+}
+
 
 .inactive
 {
@@ -224,11 +252,36 @@ body
   z-index: 1;
 }
 
-.redes:hover
+@media (hover: hover)
 {
-  background-color: black;
-  color: #fff;
+    .redes:hover
+    {
+        color: #fff;
+        background-color: white;
+    }
+
+    .redes:hover:after
+    {
+        transform:scale(147%) translateY(0)
+    }
+    
 }
+
+.redes:after
+{
+    background-color: black;
+    border-radius: 50%;
+    color: #fff;
+    content:"";
+    height: 67px;
+    position: absolute;
+    top: 0;
+    transform: scale(100%) translateY(67px);
+    transition:transform 1s cubic-bezier(.66, .00, .34, 1.00);
+    width: 67px;
+    z-index:-1;
+}
+
 
 #imagen-logo-completa
 {
@@ -295,17 +348,11 @@ body
     .boton-menu
     {
         display: block;
-        margin: 10px;
     }
 
     .menu
     {
         display: none;
-    }
-    
-    a
-    {
-        font-size: 6vw;
     }
 
     .contenido-slider

@@ -31,28 +31,6 @@ function slides(){
 }
 
 
-/**
- * Despliega el menu en movile
- */
-// var botonMenu = document.querySelector(".boton-menu");
-// var menuDesplegable = document.querySelector(".menu-desplegable");
-// botonMenu.addEventListener("click",menu)
-
-
-
-// function menu()
-// {
-//     menuDesplegable.classList.toggle("inactive")
-
-// }
-
-/**
- * querySelectorAll retorna la lista de elementos
- */
-let lista = document.querySelectorAll("div")
-console.log(lista)
-
-
 
 /**
  * Despliega el menu en laptos 

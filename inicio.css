@@ -44,13 +44,33 @@ body
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00);
-
     align-items: center;
     height: 70px;
     justify-content: center;
     max-width: 100%;
     min-width: 100%;
           
+}
+
+.header-div,.slider-contenedor
+{
+    display: flex;
+    
+}
+
+.imagen-nombre,.navegacion
+{
+    
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navegacion
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end                                                                                                                                                                                                                  
 }
 
 
@@ -72,31 +92,6 @@ body
     
 }
 
-
-.header-div,.slider-contenedor
-{
-    display: flex;
-    
-}
-
-.imagen-nombre,.navegacion
-{
-    
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-
-
-.navegacion
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end                                                                                                                                                                                                                  
-}
-
-
 .menu
 {
     display:inline-flex;
@@ -112,12 +107,6 @@ body
        
 }
 
-.menu-desplegable-2
-{
-    list-style: none;
-}
-
-
 .button-primary
 {
 
@@ -129,8 +118,6 @@ body
     
 }
     
-
-
 .button-primary:hover
 {
     text-decoration: none;
@@ -163,59 +150,98 @@ body
     color: black;
 }
 
-
 .inactive
 {
     display: none;
 }
 
 
+
+
 .contenido-slider
 {
+    
+    margin-top: 70px !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-shrink:0;
-    margin-top: 70px !important;
+    flex-shrink: 0;
+}
+
+.imagen-principal
+{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.contenido-inicio-1
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #fff;
+    max-width: 1138px;
+    width: 100%;
+    padding: 18px 0px;
+
+}
+
+.contenido-inicio-2
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contenido-inicio-3
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    gap: 14px;
+    place-content: center;
+}
+
+.contenido-inicio-card
+{
+    border: 1px solid black;
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    width: 100%;    
+    border-radius: 18px;
+    text-rendering: optimizeLegibility;
+
+}
+
+.contenido-inicio-card a
+{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.contenido-inicio-card a img
+{
+    width:80px;
+}
+
+.contenido-inicio-card:hover
+{
+    border: 2px solid black;
+    color: white;
 }
  
-
-.div-contenido-2-2
-{
-    margin: 0;  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#cajas
-{
-    margin: 20px;
-    width: 260px;
-    height: 161px;
-    border-radius: 30px;
-   
-}
-
-#carrito
-{
-    width: 100px;
-    height: 100px;
-}
-
-#opciones
-{
-    border:2px solid black;
-    border-radius: 30px;
-    width: 260px;
-    height: 161px;
-}
-
-
-#opciones:hover
-{
-    border: 4px solid black;   
-}
 
 
 #redes-sociales
@@ -225,12 +251,6 @@ body
     flex-wrap:nowrap;
 }   
 
-
-#div-redes-sociales
-{
-    display: flex;
-    gap: 10px;
-}
 
 .redes
 {
@@ -313,14 +333,17 @@ body
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(255, 255, 255, .8);
-    font-size: 2vh;
+    text-rendering: optimizeLegibility;
+    font-size: 15px ;
     border-top: 1px solid rgb(214, 214, 214)!important;
+    padding: 6px 0px;
 
 }
 
-
-
+.boton-menu-desktop
+{
+    display: none;
+}
 
 
 
@@ -360,50 +383,21 @@ body
     margin-top: 0 !important;
    }
 
-    .imagen-principal{
+    .imagen-principal
+    {
         width: 100%;
         height: 130px;
-    }
-
-    .menu-desplegable-2
-    {
-        text-align: center;
+        object-fit: fill;
     }
 
 
-    .items-menu-2
-    {
-        font-size: 6vw;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        margin: 5px;
-    }
-
-    #div-contenido
-    {
-    
-      margin-top: 0;
-
-    }
 
     #imagen-nombre-1
     {
       width: 100%;
       height: auto;
     }
-   
-    .div-contenido-one
-    {
-      display: none;
-    }
-    
-    .div-contenido-tow
-    {
-    margin: 10px;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    }
+
      
     
     #empleados-png
@@ -412,24 +406,6 @@ body
         height: auto;
        
     }
-
-   
-    
-
-    .div-contenido-2-2
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        
-   }
-
-   .figure-redes-sociales
-{
-    margin: 2px;
-}
-
 
 
  #div-redes-sociales
@@ -451,12 +427,13 @@ body
    
  #empleados-png
  {
-     width: 100%;
-     height: auto;
+    width: 100%;
+    height: auto;
  }
 
- .boton-menu-desktop{
-     display: none;
+ .boton-menu-desktop
+ {
+    display: none;
  }
 
 
@@ -466,7 +443,7 @@ body
 /* ------------------------------DISEÑO RESPONSIVE PARA TABLET---------------*/
 
 
-@media only screen and (min-width:571px) and (max-width:868px)
+@media only screen and (min-width:571px) and (max-width:890px)
 {
 
     
@@ -562,19 +539,6 @@ body
 
   .navbar-email
   {
-    /* cursor: pointer;
-    font-size: var(--sm);
-    color: var(--black);
-    background-color: var(--white);
-    border-radius: 8px;
-    border: 1px solid var(--very-ligth-pink);
-    width: 100px;
-    cursor: pointer;
-    font-size: var(--md) !important;
-    font-weight: bold;
-    height: 30px;
-    margin-left: 24px;
-    margin-right: 24px; */
 
     color: var(--black);
     background-color: transparent;
@@ -658,38 +622,12 @@ body
 
   .imagen-principal
     {
-
-        width: 100%;
-        height: 250px;
+       width: 100%;
+       height: 250px;
     }
     
     
     
 
-
-}
-
-/*------------------diseño responsive para laptop-------------*/
-
-@media only screen and (min-width:860px)
-{
- 
-    .imagen-principal
-    {
-        position: static;
-        width: 100%;
-        height: 400px;
-    }
-    
-    .contenido-slider
-    {
-        margin-top: 80px;
-
-    }
-    
-    .boton-menu-desktop{
-        display: none;
-    }
-   
 
 }

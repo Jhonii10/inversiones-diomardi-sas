@@ -15,133 +15,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
     
-    <style>
-
-:root{
-            --white: #FFFFFF;
-            --black: #000000;
-            --very-ligth-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --hospital-green: #ACD9B2;
-          }
-   
-          body{
-               font-family: 'Quicksand', sans-serif !important;
-               margin: 0;
-               padding: 0;
-           }
-
-           .cards-container{
-            display: grid;
-            grid-template-columns: repeat(auto-fill,300px);
-            gap: 26px;
-            place-content:center;
-           }
-
-           .product-card{
-            width: 300px;
-            
-           }
-
-           .product-card img{
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 1px solid var(--very-ligth-pink);
-           }
-
-           .product-info{
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-             
-           }
-
-           .product-info figure img {
-            width: 35px;
-            height: 35px;
-           }
-
-           .product-info figure {
-            margin: 0;
-           }
-
-
-
-
-    </style>
-
-
 </head>
+
 <body>
-    <header id="header">
-        <div class="header-div">
-           <div class="imagen-nombre">
-               <img src="./imagenes/nombre.png" alt="inversiones diomardi sas"  id="imagen-nombre-1">
-           </div>
 
-           <nav class="navegacion">
+<header id="header">
 
-                    <button class="boton-menu" > Menu   
-                   </button> 
+    <div class="header-div">
 
-                    <ul class="menu"  >
-                       <li class="items-menu"><a href="inicio.html" class="button-primary" ><span class="span-primary">Inicio</span></a></li>
-                       <li class="items-menu"><a href="ubicaciones.html" class="button-primary" ><span class="span-primary">Ubicaciones</span></a></li>
-                       <li class="items-menu"><a href="empleados.html" class="button-primary" ><span class="span-primary">Empleados</span></a></li>
-                       <li class="items-menu"><a href="trabajo.html" class="button-primary" ><span class="span-primary">Trabajo</span></a></li>
-                       <li class="items-menu"><a href="contacto.html" class="button-primary" ><span class="span-primary">Contacto</span></a></li>
-                   </ul> 
+        <div class="imagen-nombre">
+          <img src="./imagenes/nombre.png" alt="inversiones diomardi sas"  id="imagen-nombre-1">
+        </div>
+
+        <nav class="navegacion">
+
+            <button class="boton-menu" >Menu</button> 
+
+            <ul class="menu"  >
+                <li class="items-menu"><a href="inicio.html" class="button-primary" ><span class="span-primary">Inicio</span></a></li>
+                <li class="items-menu"><a href="ubicaciones.html" class="button-primary" ><span class="span-primary">Ubicaciones</span></a></li>
+                <li class="items-menu"><a href="empleados.html" class="button-primary" ><span class="span-primary">Empleados</span></a></li>
+                <li class="items-menu"><a href="trabajo.html" class="button-primary" ><span class="span-primary">Trabajo</span></a></li>
+                <li class="items-menu"><a href="contacto.html" class="button-primary" ><span class="span-primary">Contacto</span></a></li>
+            </ul> 
                    
-                   <div>
+            <div>
 
-                        <div class="navbar-right">
-                        <ul class="boton-menu-desktop">
-                           <button class="navbar-email" > Menu   
-                           </button>
+              <div class="navbar-right">
+                 <ul class="boton-menu-desktop">
+                   <button class="navbar-email" >Menu</button>
                            
-                         </ul>
-                       </div> 
+                 </ul>
+              </div> 
                    
-                        <div class="desktop-menu inactive">
-                         <ul>
-                           <li>
-                             <a href="./inicio.html" class="title">inicio</a>
-                           </li>
-                           <li>
-                               <a href="./ubicaciones.html" class="title">ubicaciones</a>
-                           </li>
-                           <li>
-                               <a href="./empleados.html" class="title">empleados</a>
-                           </li>
-                           <li>
-                               <a href="./trabajo.html" class="title">Trabajo</a>
-                           </li>
-                           <li>
-                               <a href="./produtos.html" class="title">Contacto</a>
-                           </li>
+              <div class="desktop-menu inactive">
+                 <ul>
+                     <li>
+                         <a href="./inicio.html" class="title">inicio</a>
+                     </li>
+                     <li>
+                         <a href="./ubicaciones.html" class="title">ubicaciones</a>
+                     </li>
+                     <li>
+                         <a href="./empleados.html" class="title">empleados</a>
+                      </li>
+                      <li>
+                         <a href="./trabajo.html" class="title">Trabajo</a>
+                      </li>
+                       <li>
+                          <a href="./produtos.html" class="title">Contacto</a>
+                       </li>
 
-                           <li>
-                            <a href="./quienessomos.html" class="title">¿Quienes somos?</a>
-                          </li>
+                        <li>
+                          <a href="./quienessomos.html" class="title">¿Quienes somos?</a>
+                        </li>
                      
                           
-                         </ul>
-                       </div>
+                    </ul>
+             </div>
 
-                       <aside id="shoppingCartContainer" class="inactive">
+             <aside id="shoppingCartContainer" class="inactive">
                            
                      
-                       </div>
+           </div>
 
-           </nav>
-          
+        </nav>
+
+    </div>
+
 </header>
+
 
 <div id="texto-principal">
     <h1 >CONOCE ALGUNOS DE NUESTROS PRODUCTOS POR CATEGORIA</h1>
- </div>
+</div>
 
 <section class="menu-mobile">
 
@@ -361,57 +308,6 @@
 
  
 </body>
-<script>
-
-
-// /**
-//  * Despliega el menu en movile
-//  */
-//  var botonMenu = document.querySelector(".boton-menu");
-// var menuDesplegable = document.querySelector(".menu-desplegable");
-// botonMenu.addEventListener("click",menu)
-
-
-
-// function menu()
-// {
-//     menuDesplegable.classList.toggle("inactive")
-
-// }
-
-// /**
-//  * querySelectorAll retorna la lista de elementos
-//  */
-// let lista = document.querySelectorAll("div")
-// console.log(lista)
-
-
-
-/**
- * Despliega el menu en laptos 
- */
-
- const menuEmail = document.querySelector('.navbar-email');
- const desktopMenu = document.querySelector('.desktop-menu');
- const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
- menuEmail.addEventListener('click', toggleDesktopMenu);
-
- function toggleDesktopMenu()
- {
-   const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
- 
-   if (!isAsideClosed) 
-   {
-     shoppingCartContainer.classList.add('inactive');
-   }
-   
-   desktopMenu.classList.toggle('inactive');
- 
- }
- 
-
-
-
-</script>
+<script src="laptos.js"></script>
 <script src="productos.js"></script>
 </html>

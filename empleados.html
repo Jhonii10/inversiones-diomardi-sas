@@ -130,11 +130,11 @@
     </li>
 
     <li>
-        <a href="/">¿Quienes somos?</a>
+        <a href="contacto.html">Contacto</a>
     </li>
 
     <li>
-        <a href="contacto.html">Contacto</a>
+        <a href="quienessomos.html">¿Quienes somos?</a>
     </li>
 
 
@@ -155,7 +155,6 @@
 
 </section>
 
-<!-- <section class="contenedor-empleado"> <span>Aun se encuentra en proceso de desarrollo Esperalo muy pronto!</span></section> -->
 
 <div class="login">
     <div class="form-containner inicio-de-section">
@@ -164,10 +163,10 @@
         <form action="/" method="get" class="form">
 
             <label for="password" class="label">Correo electronico</label >
-            <input type="text" name="" id="password" placeholder="correo@example.com" class="input input-password">
+            <input type="text" name=""  placeholder="correo@example.com" class="input input-password">
 
             <label for="password" class="label">Contraseña</label >
-            <input type="password" name="" id="password" placeholder="********" class="input input-password">
+            <input type="password" name=""  placeholder="********" class="input input-password">
 
             <input type="submit" value="Ingresar" class="primary-button login-button">
 
@@ -193,19 +192,19 @@
         <form action="/" method="get" class="form">
 
             <label for="password" class="label">Nombre Completo</label >
-            <input type="text" name="" id="password" placeholder="Nombre completo" class="input input-password">
+            <input type="text" name=""  placeholder="Nombre completo" class="input input-password">
             
             <label for="password" class="label">Identificacion</label >
-            <input type="text" name="" id="password" placeholder="Nombre completo" class="input input-password">
+            <input type="text" name="" placeholder="Cedula" class="input input-password">
 
             <label for="password" class="label">Correo electronico</label >
-            <input type="text" name="" id="password" placeholder="correo@example.com" class="input input-password">
+            <input type="text" name=""  placeholder="correo@example.com" class="input input-password">
 
             <label for="password" class="label">Contraseña</label >
-            <input type="password" name="" id="password" placeholder="********" class="input input-password">
+            <input type="password" name=""  placeholder="********" class="input input-password">
 
             <label for="password" class="label">Confirmar Contraseña</label >
-            <input type="password" name="" id="password" placeholder="********" class="input input-password">
+            <input type="password" name=""  placeholder="********" class="input input-password">
 
 
             
@@ -217,31 +216,8 @@
 
 </div>
 
-<script>
-
-    const menuEmail = document.querySelector('.navbar-email');
-    const desktopMenu = document.querySelector('.desktop-menu');
-    const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
-    menuEmail.addEventListener('click', toggleDesktopMenu);
-   
-    function toggleDesktopMenu()
-    {
-      const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
-    
-      if (!isAsideClosed) 
-      {
-        shoppingCartContainer.classList.add('inactive');
-      }
-      
-      desktopMenu.classList.toggle('inactive');
-    
-    }
-    
-   
-   </script>
 
 
 </body>
-<script src="script.js"></script>
-<script src="mobile.js"></script>
+<script src="laptos.js"></script>
 <script src="empleados.js"></script>

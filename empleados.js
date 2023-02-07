@@ -25,3 +25,34 @@
         crearCuenta.style.display = "none"
         
     }
+
+
+const menuMobile = document.querySelector(".menu-mobile");
+const botonMenu = document.querySelector(".boton-menu");
+const header = document.querySelector("#header");
+const botonExit = document.querySelector(".exit");
+const login = document.querySelector(".login")
+
+
+botonMenu.addEventListener("click", desplegarMenuMovile)
+
+
+function desplegarMenuMovile()
+{
+    menuMobile.style.display = "block";
+    header.style.display = "none";
+    login.style.display = "none";
+
+}
+
+
+botonExit.addEventListener("click", regresarPaginaDeInicio)
+
+
+function regresarPaginaDeInicio(params)
+{
+    menuMobile.style.display = "none";
+    header.style.display = "flex"; 
+    login.style.display = "grid";
+}
+

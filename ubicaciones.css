@@ -87,6 +87,7 @@
 {
     display: flex;
     justify-content: space-between;
+    padding: 12px 0px 0px 0px;
 }
 
 #datos-almacen
@@ -119,7 +120,7 @@
     font-weight: bold;
     font-family: 'Quicksand', sans-serif !important;
     border-radius: 5px;
-
+    padding: 0px 6px
 }
 
 #imagen-ubicacion{

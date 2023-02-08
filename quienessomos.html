@@ -39,6 +39,39 @@
             border: 1px solid var(--very-ligth-pink);
         }
 
+        .card-for-container
+        {
+            display: flex; flex-direction: column; gap: 12px;
+
+        }
+
+        @media only screen and (max-width:571px) 
+        {
+            .three-container{
+                flex-direction: column;
+            }
+
+            .card-three-container
+            {
+                width: 100%;
+            }
+
+            .card-for-container
+            {
+                padding: 0px 12px;
+            }
+
+            .two-container-3-title{
+                font-size: 28px;
+            }
+
+            .two-container-3-parrafo{
+                text-align: center;
+                font-size: 14px;
+            }
+            
+        }
+
         
 
 
@@ -64,7 +97,7 @@
                 </button>
 
                  <ul class="menu"  >
-                    <li class="items-menu"><a href="inicio.html" class="button-primary" ><span class="span-primary">Inicio</span></a></li>
+                    <li class="items-menu"><a href="index.html" class="button-primary" ><span class="span-primary">Inicio</span></a></li>
                     <li class="items-menu"><a href="productos.html" class="button-primary" ><span class="span-primary">Productos</span></a></li>
                     <li class="items-menu"><a href="ubicaciones.html" class="button-primary" ><span class="span-primary">Ubicaciones</span></a></li>
                     <li class="items-menu"><a href="empleados.html" class="button-primary" ><span class="span-primary">Empleados</span></a></li>
@@ -84,7 +117,7 @@
                     <div class="desktop-menu inactive">
                       <ul>
                         <li>
-                          <a href="./inicio.html" class="title">inicio</a>
+                          <a href="./index.html" class="title">inicio</a>
                         </li>
                         <li>
                             <a href="./produtos.html" class="title">productos</a>
@@ -126,7 +159,7 @@
   <ul>
 
     <li>
-        <a href="./inicio.html">inicio</a>
+        <a href="./index.html">inicio</a>
     </li>
 
     <li>
@@ -142,11 +175,11 @@
     </li>
 
     <li>
-        <a href="/">¿Quienes somos?</a>
+        <a href="trabajo.html">trabajo</a>
     </li>
 
     <li>
-        <a href="/">Contacto</a>
+        <a href="contacto.html">Contacto</a>
     </li>
 
 
@@ -156,7 +189,7 @@
   <ul>
 
     <li>
-        <a href="" class="name">Inversiones diomardi sas</a>
+        <a href="quienessomos.html" class="name">Inversiones diomardi sas</a>
     </li>
 
   </ul>
@@ -176,8 +209,8 @@
 
             <div class="two-container-3">
 
-                <h1 class="two-container-3-title" >¿Quienes somos ?</h1>
-                <p>¡Somos una empresa orgullosamente vallecaucana que sueña con expandirse por todo el país!</p>
+                <h1 class="two-container-3-title" >¿Quienes somos?</h1>
+                <p class="two-container-3-parrafo">¡Somos una empresa orgullosamente vallecaucana que sueña con expandirse por todo el país!</p>
                 <div class="three-container">
 
                     <div class="card-three-container">
@@ -215,7 +248,7 @@
 
                 </div>
                 
-                <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div  class="card-for-container" >
 
                     <div>
                         <h2> Origen </h2>
@@ -268,11 +301,44 @@
 
 </section>
 
+<script>
+
+const menuMobile = document.querySelector(".menu-mobile");
+const botonMenu = document.querySelector(".boton-menu");
+const header = document.querySelector("#header");
+const botonExit = document.querySelector(".exit");
+const trabajo = document.querySelector(".two-container")
+
+
+
+botonMenu.addEventListener("click", desplegarMenuMovile)
+
+
+function desplegarMenuMovile()
+{
+    menuMobile.style.display = "block";
+    header.style.display = "none";
+    trabajo.style.display = "none"
+
+}
+
+
+botonExit.addEventListener("click", regresarPaginaDeInicio)
+
+
+function regresarPaginaDeInicio(params)
+{
+    menuMobile.style.display = "none";
+    header.style.display = "flex"; 
+    trabajo.style.display = "block"
+}
+
+
+</script>
+
 
 </body>
-<script src="script.js"></script>
-<script src="mobile.js"></script>
-
+<script src="laptos.js"></script>
 
 
             

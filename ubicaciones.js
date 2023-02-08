@@ -249,26 +249,7 @@ function desplegarcosmoelsi()
 
 }
 
-botonAlmavnsexta.addEventListener("click",desplegaravnsexta)
-function desplegaravnsexta()
-{
-    console.log("1")
-    if (botonAlmavnsexta.innerHTML === "Mas detalles")
-    {
-        detallesAlmacenavnsexta.style.display = "block";
-        botonAlmavnsexta.innerHTML = "Menos detalles";
-        console.log("click")
-        
-    } 
-    
-    else if(botonAlmavnsexta.innerHTML === "Menos detalles")
-    {
-        detallesAlmacenavnsexta.style.display = "none";
-        botonAlmavnsexta.innerHTML = "Mas detalles";
-    }
- 
 
-}
 
 
 botonCalimanuevo.addEventListener("click",desplegarcalimanuevo)

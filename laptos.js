@@ -5,6 +5,7 @@
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+
 menuEmail.addEventListener('click', toggleDesktopMenu);
 
 function toggleDesktopMenu()
@@ -14,6 +15,7 @@ function toggleDesktopMenu()
   if (!isAsideClosed) 
   {
     shoppingCartContainer.classList.add('inactive');
+    
   }
   
   desktopMenu.classList.toggle('inactive');

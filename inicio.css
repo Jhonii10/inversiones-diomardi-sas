@@ -30,7 +30,7 @@ body
 
 #imagen-nombre-1
 {
-    width: 200px;
+    width: 148px;
 }
 
 #header
@@ -58,6 +58,11 @@ body
     display: flex;
     width: 100%;
     
+}
+
+.imagen-nombre{
+    display: flex;
+    align-items: center;
 }
 
 .imagen-nombre,.navegacion
@@ -309,7 +314,7 @@ body
 
 #imagen-logo-completa
 {
-    width: 200px;
+    width: 147px;
     height: auto;
 }
 
@@ -357,6 +362,12 @@ body
 
 @media only screen and (max-width:571px) 
 {
+   .desktop-menu
+   {
+    display: none;
+   }    
+
+
 
     #header
     {
@@ -454,12 +465,6 @@ body
     .menu
     {
         display: none;
-    }
-
-
-    #imagen-nombre-1
-    {
-      width: 200px;
     }
    
     .div-contenido-one
@@ -629,8 +634,15 @@ body
        height: 250px;
     }
     
-    
-    
 
+
+}
+
+@media only screen and (min-width:890px)
+{
+  .desktop-menu
+  {
+  display: none;
+  }
 
 }

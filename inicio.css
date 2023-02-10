@@ -84,7 +84,7 @@ body
 {
     display: none;
     color: var(--black);
-    background-color: var(--white);
+    background-color: transparent;
     border-radius: 8px;
     border: 1px solid black;
     width: 120px;
@@ -368,13 +368,13 @@ body
 
 
 
-    #header
+    /* #header
     {
         background-color: transparent;
         position:relative;
         display: flex;
         justify-content: center;
-    }
+    } */
     
     .navegacion
     {
@@ -392,10 +392,10 @@ body
         display: none;
     }
 
-    .contenido-slider
+    /* .contenido-slider
    {
     margin-top: 0 !important;
-   }
+   } */
 
     .imagen-principal
     {

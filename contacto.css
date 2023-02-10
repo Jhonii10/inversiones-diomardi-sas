@@ -271,11 +271,11 @@ max-width: 888px;
 
 @media only screen and (max-width:571px) 
 {
-    .two-container-3
+    /* .two-container-3
     {
       padding-top: 0px;
       padding-bottom: 0px;
-    }
+    } */
 
     .two-container-3-title 
     {

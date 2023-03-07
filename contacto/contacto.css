@@ -131,55 +131,7 @@
   object-fit: cover;
 }
 
-.redes
-{
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  color:black;
-  cursor: pointer;
-  display: inline-flex;
-  height: 48px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  transition: color .33s linear .5s, border-color ease-out .5s, background-color .33s linear 0s;
-  vertical-align: bottom;
-  width: 48px;
-  z-index: 1;
-}
 
-@media (hover: hover)
-{
-    .redes:hover
-    {
-        color: #fff;
-        background-color: white;
-    }
-
-    .redes:hover:after
-    {
-        transform:scale(147%) translateY(0)
-    }
-    
-}
-
-.redes:after
-{
-    background-color: black;
-    border-radius: 50%;
-    color: #fff;
-    content:"";
-    height: 67px;
-    position: absolute;
-    top: 0;
-    transform: scale(100%) translateY(67px);
-    transition:transform 1s cubic-bezier(.66, .00, .34, 1.00);
-    width: 67px;
-    z-index:-1;
-}
         
         
 .form

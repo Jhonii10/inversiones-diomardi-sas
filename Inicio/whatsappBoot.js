@@ -23,7 +23,7 @@ popupWhatsApp = () => {
 
     console.log(screen.height)
 
-    if(screen.height >= 758){
+    if(screen.height >= 928){
 
         setTimeout(() => {
             popup.classList.toggle('is-active-whatsapp-popup');

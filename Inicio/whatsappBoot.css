@@ -13,7 +13,7 @@
     position: fixed;
     z-index: 8;
     bottom: 0px;
-    right: 0px;
+    right: 12px;
     padding: 5px;
     margin: 0px;
     
@@ -172,6 +172,7 @@
     width: 100%;
     padding: 24px 20px;
     font-family: 'Quicksand', sans-serif !important;
+    
 }
 
 .whastapp-options img{
@@ -191,8 +192,11 @@
 
 @media (max-height:600px){
 
+    
+
     .popup-whatsapp{
         bottom: 0;
+    
     }
 }
 
@@ -207,6 +211,7 @@
     .content-whatsapp-top{
         height: auto;
     }
+    
 }
 
 
@@ -217,6 +222,7 @@
         display: none;
     }
 
+    
     /* .logo-jhoni{
         margin: 0;
     } */
@@ -251,6 +257,10 @@
         border: 0px;
         height: 100%;
 
+    }
+
+    .nav-bottom{
+        right: 0px;
     }
 
 }

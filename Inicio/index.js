@@ -1,32 +1,37 @@
-let slider = document.querySelector(".slider-contenedor")
-let sliderIndividual = document.querySelectorAll(".contenido-slider")
-let contador = 1;
-let width = sliderIndividual[0].clientWidth;
-let intervalo = 3000;
+// Selecion de elementos del DOM
 
-window.addEventListener("resize", function(){
-    width = sliderIndividual[0].clientWidth;
-})
-
-setInterval(function(){
-    slides();
-},intervalo);
+const menuMobile = document.querySelector(".menu-mobile");
+const botonMenu = document.querySelector(".boton-menu");
+const header = document.querySelector("#header");
+const header_div = document.querySelector(".header-div");
+const botonExit = document.querySelector(".exit");
+const dateTest = document.querySelector(".data-test")
 
 
+// Muestra el menu movil
+function mostrarMenuMovil()
+{
+    menuMobile.classList.remove("inactive")
+    header.style.display = "none";
+    header_div.style.display = "none";
+    dateTest.style.display = "none";
 
-function slides(){
-    slider.style.transform = "translate("+(-width*contador)+"px)";
-    slider.style.transition = "transform .6s";
-    contador++;
-
-    if(contador == sliderIndividual.length){
-        setTimeout(function(){
-            slider.style.transform = "translate(0px)";
-            slider.style.transition = "transform 0s";
-            contador=1;
-        },2500)
-    }
 }
+
+
+// Oculta el menu movil
+function ocultarMenuMovil()
+{
+    menuMobile.classList.add("inactive")
+    header.style.display = "inline-flex"; 
+    header_div.style.display = "flex";
+    dateTest.style.display = "block";
+    
+}
+
+// Escucha los eventos 
+botonMenu.addEventListener("click", mostrarMenuMovil)
+botonExit.addEventListener("click", ocultarMenuMovil)
 
 
 

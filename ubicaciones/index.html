@@ -167,7 +167,7 @@
 </header>
 
 
-<section class="menu-mobile">
+<section class="menu-mobile inactive">
 
     <div>
         <img src="../image/nombre.png" alt="inversiones diomardi sas">
@@ -242,14 +242,16 @@
                       <p>Calle 24N # 4N-32</p>
                       <p>Cali - Valle Del Cauca</p>
 
-                      <div class="detalles-pasarela" id="root">
-                        
+                      <div class="detalles-pasarela" style="display: none;">
+                       
+                        <div class="horarios-pasarela" ></div>
                         <p>Telefono: 3103752</p>
                      </div>
+                     
 
                       <div class="div-boton"> 
                           <a href="#">Como llegar</a>
-                          <button class="boton-1">Mas detalles</button>  
+                          <button class="boton-1" id="boton-pasarela">Mas detalles</button>  
                       </div>
                   </div>
               </label>
@@ -268,8 +270,9 @@
                           <p>Centro Comercial Cosmocentro | Local 180</p>
                           <p>Cali - Valle Del Cauca</p>
 
-                          <div class="detalles-cosmocentro">
-                            <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMOCENTRO.PNG" alt="">
+                          <div class="detalles-cosmocentro" style="display: none;" >
+                            
+                            <div class="horarios-cosmocentro"></div>
                             <p>Telefono: 4855079</p>
                             
 
@@ -277,7 +280,7 @@
 
                           <div class="div-boton"> 
                               <a href="#">Como llegar</a>
-                              <button class="boton-2">Mas detalles</button>
+                              <button class="boton-2" id="boton-cosmocentro">Mas detalles</button>
                               
                           </div>
 
@@ -301,8 +304,9 @@
                       <p>La 14 de valle de lili | Local 01-02</p>
                       <p>Cali - Valle Del Cauca</p>
 
-                      <div class="detalles-valledelili">
-                        <img src="./ALMACENES COLOR/ALMACENES COLOR/VALLE DEL LILI.PNG" alt="">
+                      <div class="detalles-valledelili" style="display: none;">
+
+                        <div class="horarios-valledelili"></div>
                         <p>Telefono: 3135667699</p>
                         
 
@@ -312,7 +316,7 @@
 
 
                           <a href="#">Como llegar</a>
-                          <button class="boton-3">Mas detalles</button>
+                          <button class="boton-3" id="boton-valledelili">Mas detalles</button>
                           
                       </div>
 
@@ -336,15 +340,15 @@
                   <p>Supermercado mercar segundo piso</p>
                   <p>Cali - Valle Del Cauca</p>
 
-                  <div class="detalles-mercar">
-                    <div id="like_button_container"></div>
+                  <div class="detalles-mercar" style="display: none;">
+                    <div class="horarios-mercar"></div>
                     <p>Telefono: 3798383</p>
                     
 
                     </div>
                   <div class="div-boton"> 
                       <a href="#">Como llegar</a>
-                      <button class="boton-4">Mas detalles</button>
+                      <button class="boton-4" id="boton-mercar">Mas detalles</button>
                       
                   </div>
 
@@ -369,7 +373,6 @@
               <p>Cali - Valle Del Cauca</p>
 
               <div class="detalles-cosmobelleza">
-                <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMOBELLEZA.PNG" alt="">
                 <p>Telefono: 3480746</p>
                 
 
@@ -402,7 +405,6 @@
           <p>Cali - Valle Del Cauca</p>
 
           <div class="detalles-unicentro">
-            <img src="./ALMACENES COLOR/ALMACENES COLOR/UNICENTRO.PNG" alt="">
             <p>Telefono: 3087440</p>
             
 
@@ -434,7 +436,6 @@
           <p>Cali - Valle Del Cauca</p>
 
           <div class="detalles-chipichape">
-            <img src="./ALMACENES COLOR/ALMACENES COLOR/CHIPICHAPE.PNG" alt="">
             <p>Telefono: 3135667699</p>
             
 
@@ -466,7 +467,6 @@
           <p>Cali - Valle Del Cauca</p>
 
           <div class="detalles-cosmoelsi">
-            <img src="./ALMACENES COLOR/ALMACENES COLOR/COSMO EL SI.PNG" alt="">
             <p>Telefono: 4856175</p>
             
 
@@ -501,7 +501,6 @@
           <p>Cali - Valle Del Cauca</p>
 
           <div class="detalles-calimanuevo">
-            <img src="./ALMACENES COLOR/ALMACENES COLOR/CALIMA NUEVO.PNG" alt="">
             <p>Telefono: 3135667699</p>
             
 
@@ -533,7 +532,6 @@
           <p>Centro Comercial Paseo de la quinta | Local </p>
           <p>Cali - Valle Del Cauca</p>
           <div class="detalles-saladeventas">
-            <img src="./imagenes/Imagen de WhatsApp 2022-12-28 a las 13.22.54.jpg" alt="">
             <p>Telefono: 3135667699</p>
             
 
@@ -566,7 +564,6 @@
           <p>Yumbo - Valle Del Cauca</p>
 
           <div class="detalles-bodegaprincipal">
-            <img src="./imagenes/Imagen de WhatsApp 2022-12-28 a las 13.22.54.jpg" alt="">
             <p>Telefono: 3135667699</p>
             
 
@@ -615,7 +612,7 @@
 </section>
 
 
-    
+
 
 
 
@@ -653,13 +650,14 @@
 
 
 </script>
+
 <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
-<!-- Cargamos nuestro componente de React. -->
-<script src="like_button.js"></script
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="horarios.js" type="text/babel"></script>
+<script src="ubicaciones.js"></script>
 
 </body>
-<script src="ubicaciones.js"></script>
-<script src="index.js"></script>
+
+
 </html>

@@ -34,6 +34,16 @@ botonMenu.addEventListener("click", mostrarMenuMovil)
 botonExit.addEventListener("click", ocultarMenuMovil)
 
 
+const nav = document.querySelector('#header')
+window.addEventListener('scroll', fixNav)
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight ) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
+}
 
 
  

@@ -302,7 +302,17 @@ function regresarPaginaDeInicio(params)
     header.style.display = "flex"; 
     trabajo.style.display = "block"
 }
-    
+
+const nav = document.querySelector('#header')
+window.addEventListener('scroll', fixNav)
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight ) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
+}
    
 </script>
 
